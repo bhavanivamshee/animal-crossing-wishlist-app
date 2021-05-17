@@ -2,6 +2,6 @@
 
 <% @users.each do |user| %>
 
-    <%= user.island_name %>
+    <%= link_to user.island_name, user_path(user) %>
     <br>
     <% end %>
